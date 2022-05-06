@@ -1,3 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+@font-face {
+  font-family: asap-semiB;
+  src: url("../tipog/Asap-SemiBold.otf");
+}
+
+@font-face {
+  font-family: asap;
+  src: url("../tipog/Asap-Regular.otf");
+}
+
+@font-face {
+  font-family: cocogoose;
+  src: url("../tipog/Cocogoose Pro-trial.ttf");
+}
+
 body {
   overflow-x: hidden;
   scroll-behavior: smooth;
@@ -20,101 +36,21 @@ body .navbar .navbar-nav {
 }
 
 body .navbar .navbar-nav .nav-link {
-  color: #fff;
+  color: #66256C;
   text-transform: uppercase;
   font-family: sans-serif;
 }
 
 body .navbar .navbar-nav .nav-link:hover {
   border-bottom: 1px #fff solid;
-  color: #fff;
-}
-
-body #home {
-  height: 650px;
-  background-image: url(../img/wave-haikei.svg);
-  background-size: cover;
-  background-position: bottom;
-  overflow-x: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-animation: fondo 7s ease infinite;
-          animation: fondo 7s ease infinite;
-}
-
-@-webkit-keyframes fondo {
-  0% {
-    background-position: bottom;
-  }
-  25% {
-    background-position: center;
-  }
-  50% {
-    background-position: top;
-  }
-  75% {
-    background-position: center;
-  }
-  100% {
-    background-position: bottom;
-  }
-}
-
-@keyframes fondo {
-  0% {
-    background-position: bottom;
-  }
-  25% {
-    background-position: center;
-  }
-  50% {
-    background-position: top;
-  }
-  75% {
-    background-position: center;
-  }
-  100% {
-    background-position: bottom;
-  }
-}
-
-body #home .slogan {
-  font-family: sans-serif;
-  text-transform: uppercase;
-  color: #ffff41;
-}
-
-body #home .flecha1, body #home .flecha2 {
-  background-image: url(../img/down-chevron.png);
-  background-size: cover;
-  width: 10em;
-  height: 10em;
-  -webkit-animation: rotar 3s linear infinite;
-          animation: rotar 3s linear infinite;
-  position: relative;
-  left: -20%;
-  top: 10%;
-}
-
-body #home .flecha2 {
-  left: 70%;
-  top: 15%;
+  -webkit-transition-duration: 3s;
+          transition-duration: 3s;
+  color: fuchsia;
 }
 
 body #nosotros {
   height: 650px;
-  background-color: #77206F;
+  background-color: #edc519;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -128,6 +64,7 @@ body #nosotros h2 {
   margin-top: 2em;
   text-align: center;
   color: #fff;
+  font-family: asap-semiB;
 }
 
 body #nosotros div {
@@ -163,6 +100,7 @@ body #nosotros div .infoNosotros {
 body #nosotros div .infoNosotros p {
   text-align: justify;
   padding: 1em;
+  font-family: "Poppins", sans-serif;
 }
 
 body #nosotros div .equipo {
@@ -217,7 +155,7 @@ body #nosotros div .equipo .equipo3 {
 
 body #servicios {
   height: 650px;
-  background-image: url(../img/wave-haikei-blanco.svg);
+  background-image: url(../img/amarilloArriba.svg);
   background-size: cover;
   background-position: top;
   display: -webkit-box;
@@ -266,11 +204,6 @@ body #servicios .cardServ .card {
   text-align: center;
   border-radius: 30px;
   border-style: none;
-  background-image: url(../img/16e2eeb83ae4581f50aedb488ae45521.jpg);
-  background-size: cover;
-  background-position: top;
-  -webkit-filter: opacity(90%);
-          filter: opacity(90%);
 }
 
 body #servicios .cardServ .card:hover {
@@ -292,6 +225,10 @@ body #servicios .cardServ .card .front {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -542,7 +479,7 @@ body #contacto .form form {
 
 footer {
   height: 200px;
-  background-color: #fff;
+  background-color: #edc519;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -572,7 +509,7 @@ footer .linkTree {
 
 footer .linkTree a {
   text-decoration: none;
-  color: purple;
+  color: #fff;
 }
 
 footer .subscribe {
@@ -621,5 +558,63 @@ footer .redes {
 footer .redes img {
   width: 3em;
   height: 3em;
+}
+
+#home {
+  background-image: url(../img/amarilloAbajo.svg);
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#home .intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#home .intro .logoHome {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 2em;
+  gap: 1em;
+}
+
+#home .intro .logoHome h2 {
+  font-family: cocogoose;
+  color: #fff;
+  text-align: center;
+}
+
+#home .intro .gifHome {
+  position: relative;
+  left: 15%;
 }
 /*# sourceMappingURL=style.css.map */

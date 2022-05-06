@@ -1,0 +1,82 @@
+#home {
+    background-image: url(../img/amarilloAbajo.svg);
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .intro {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+
+        .logoHome {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 2em;
+            gap: 1em;
+            h2 {
+                font-family: cocogoose;
+                color: #fff;
+                text-align: center;        
+            }
+            
+        }
+
+        .gifHome {
+            position: relative;
+            left: 15%;
+        }
+    }
+
+    
+
+}
+
+// #home {
+//     height: 650px;
+//     background-image: url(../img/wave-haikeiBLANCO.svg);
+//     background-size: cover;
+//     background-position: bottom;
+//     overflow-x: hidden;
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     justify-content: center;
+//    animation: fondo 7s ease infinite;
+//    @keyframes fondo {
+//        0% {background-position: bottom}
+//        25% {background-position: center;}
+//        50% {background-position: top}
+//        75% {background-position: center;}
+//        100% {background-position: bottom}
+//    }
+// .slogan{
+//     font-family: sans-serif;
+//     text-transform: uppercase;
+//     color: rgb(255, 255, 65);
+// }
+
+
+//     .flecha1 {
+//         background-image: url(../img/down-chevron.png);
+//         background-size: cover;
+//         width: 10em;
+//         height: 10em;
+//         animation: rotar 3s linear infinite;
+//         position: relative;
+//         left: -20%;
+//         top: 10%;
+//     }
+
+//     .flecha2 {
+//         @extend .flecha1;
+//         left: 70%;
+//         top: 15%;
+//     }
+
+// }

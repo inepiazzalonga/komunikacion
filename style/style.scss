@@ -1,3 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@font-face {
+    font-family: asap-semiB;
+    src: url("../tipog/Asap-SemiBold.otf");
+}
+@font-face {
+    font-family: asap;
+    src: url("../tipog/Asap-Regular.otf");
+}
+@font-face {
+    font-family: cocogoose;
+    src: url("../tipog/Cocogoose\ Pro-trial.ttf");
+}
+
+//colores
+$fucsia: #ec1f53;
+$violeta: #66256C;
+$amarillo: #edc519;
+
+//fuentes
+$texto-parrafo: 'Poppins', sans-serif;
+
+
 body {
     overflow-x: hidden;
     scroll-behavior: smooth;
@@ -19,66 +42,24 @@ body {
             z-index: 1;
 
             .nav-link {
-                color: #fff;
+                color: $violeta;
                 text-transform: uppercase;
                 font-family: sans-serif;
 
                 &:hover {
                     border-bottom: 1px #fff solid;
-                    color: #fff;
+                    transition-duration: 3s;
+                    color: fuchsia;
                 }
             }
         }
 
     }
 
-    #home {
-        height: 650px;
-        background-image: url(../img/wave-haikei.svg);
-        background-size: cover;
-        background-position: bottom;
-        overflow-x: hidden;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-       animation: fondo 7s ease infinite;
-       @keyframes fondo {
-           0% {background-position: bottom}
-           25% {background-position: center;}
-           50% {background-position: top}
-           75% {background-position: center;}
-           100% {background-position: bottom}
-       }
-    .slogan{
-        font-family: sans-serif;
-        text-transform: uppercase;
-        color: rgb(255, 255, 65);
-    }
-
-
-        .flecha1 {
-            background-image: url(../img/down-chevron.png);
-            background-size: cover;
-            width: 10em;
-            height: 10em;
-            animation: rotar 3s linear infinite;
-            position: relative;
-            left: -20%;
-            top: 10%;
-        }
-
-        .flecha2 {
-            @extend .flecha1;
-            left: 70%;
-            top: 15%;
-        }
-
-    }
-
+   
     #nosotros {
         height: 650px;
-        background-color: #77206F;
+        background-color: $amarillo;
         display: flex;
         flex-direction: column;
 
@@ -86,6 +67,7 @@ body {
             margin-top: 2em;
             text-align: center;
             color: #fff;
+            font-family: asap-semiB;
         }
 
         div {
@@ -105,6 +87,7 @@ body {
                 p {
                     text-align: justify;
                     padding: 1em;
+                    font-family: $texto-parrafo;
                 }
             }
 
@@ -150,7 +133,7 @@ body {
 
     #servicios {
         height: 650px;
-        background-image: url(../img/wave-haikei-blanco.svg);
+        background-image: url(../img/amarilloArriba.svg);
         background-size: cover;
         background-position: top;
         display: flex;
@@ -179,16 +162,13 @@ body {
                 text-align: center;
                 border-radius: 30px;
                 border-style: none;
-                background-image: url(../img/16e2eeb83ae4581f50aedb488ae45521.jpg);
-                background-size: cover;
-                background-position: top;
-                filter: opacity(90%);
 
                 &:hover {
                    
                     transform: perspective(600px) rotateY(180deg);
                     .front{
                         visibility: hidden;
+
                     }
                     .back{
                         visibility: visible;
@@ -199,8 +179,9 @@ body {
 
                 .front{
                     display: flex;
-                    align-items: center;
-                    justify-content: center;
+                    flex-direction: column;
+                align-items: center;
+                justify-content: center;
                 }
 
                 .back {
@@ -309,4 +290,4 @@ body {
 
 }
 
-@import "contacto", "footer"
+@import "contacto", "footer", "home"

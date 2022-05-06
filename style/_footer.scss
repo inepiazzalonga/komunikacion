@@ -1,6 +1,6 @@
 footer{
     height: 200px;
-    background-color: #fff;
+    background-color: $amarillo;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -13,7 +13,7 @@ footer{
         gap: 0.5em;
         a{
             text-decoration: none;
-            color: purple;
+            color: #fff;
         }
     }
     .subscribe{
