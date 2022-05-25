@@ -1,12 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
 @font-face {
     font-family: asap-semiB;
     src: url("../tipog/Asap-SemiBold.otf");
 }
+
 @font-face {
     font-family: asap;
     src: url("../tipog/Asap-Regular.otf");
 }
+
 @font-face {
     font-family: cocogoose;
     src: url("../tipog/Cocogoose\ Pro-trial.ttf");
@@ -18,7 +21,8 @@ $violeta: #66256C;
 $amarillo: #edc519;
 
 //fuentes
-$texto-parrafo: 'Poppins', sans-serif;
+$texto-parrafo: 'Poppins',
+sans-serif;
 
 
 body {
@@ -44,7 +48,7 @@ body {
             .nav-link {
                 color: $violeta;
                 text-transform: uppercase;
-                font-family: sans-serif;
+                font-family: asap;
 
                 &:hover {
                     border-bottom: 1px #fff solid;
@@ -54,240 +58,8 @@ body {
             }
         }
 
-    }
-
-   
-    #nosotros {
-        height: 650px;
-        background-color: $amarillo;
-        display: flex;
-        flex-direction: column;
-
-        h2 {
-            margin-top: 2em;
-            text-align: center;
-            color: #fff;
-            font-family: asap-semiB;
-        }
-
-        div {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            gap: 2em;
-
-            .infoNosotros {
-                flex-direction: column;
-                width: 40%;
-                align-items: center;
-                margin-top: -2em;
-                color: #fff;
-
-                p {
-                    text-align: justify;
-                    padding: 1em;
-                    font-family: $texto-parrafo;
-                }
-            }
-
-            .equipo {
-                margin-top: 2em;
-                width: 50%;
-                display: grid;
-                grid-template-columns: 1fr 1fr 1fr;
-                grid-template-rows: 1fr 1fr;
-                grid-template-areas:
-                    "equipo1 . equipo2"
-                    ". equipo3 .";
-                row-gap: 1em;
-
-                .equipo1 {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    gap: 1em;
-                    grid-area: equipo1;
-                    width: 12em;
-                    height: 14em;
-                    background-color: #fff;
-                    border-radius: 30px;
-
-                    img {
-                        width: 80%;
-                    }
-                }
-
-                .equipo2 {
-                    @extend .equipo1;
-                    grid-area: equipo2;
-                }
-
-                .equipo3 {
-                    @extend .equipo1;
-                    grid-area: equipo3;
-                }
-            }
-        }
-    }
-
-    #servicios {
-        height: 650px;
-        background-image: url(../img/amarilloArriba.svg);
-        background-size: cover;
-        background-position: top;
-        display: flex;
-        flex-direction: column;
-        padding: 2em;
-        gap: 4em;
-
-        h2 {
-            margin-top: 1em;
-            text-align: center;
-            color: #fff;
-        }
-
-        .cardServ {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-
-            .card {
-                width: 25%;
-                height: 25em;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                padding: 2em;
-                text-align: center;
-                border-radius: 30px;
-                border-style: none;
-
-                &:hover {
-                   
-                    transform: perspective(600px) rotateY(180deg);
-                    .front{
-                        visibility: hidden;
-
-                    }
-                    .back{
-                        visibility: visible;
-                        background-color: #fff;
-                        padding: 4em 2em 3em 2em;
-                    }
-                }
-
-                .front{
-                    display: flex;
-                    flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                }
-
-                .back {
-                    visibility: hidden;
-                    transform: perspective(600px) rotateY(180deg);
-
-                   }
-            }
-        }
-
-
-    }
+    }   
 }
 
 
-
-
-
-
-@keyframes rotar {
-    0% {
-        border-color: yellow;
-        transform: rotate(-50deg)
-    }
-
-    5% {
-        transform: rotate(-45deg)
-    }
-
-    10% {
-        transform: rotate(-40deg)
-    }
-
-    15% {
-        transform: rotate(-35deg)
-    }
-
-    20% {
-        transform: rotate(-30deg)
-    }
-
-    25% {
-        transform: rotate(-25deg)
-    }
-
-    30% {
-        transform: rotate(-20deg)
-    }
-
-    35% {
-        transform: rotate(-15deg)
-    }
-
-    40% {
-        transform: rotate(-10deg)
-    }
-
-    45% {
-        transform: rotate(-5deg)
-    }
-
-    50% {
-        border-color: yellowgreen;
-        transform: rotate(-0deg)
-    }
-
-    55% {
-        transform: rotate(-5deg)
-    }
-
-    60% {
-        transform: rotate(-10deg)
-    }
-
-    65% {
-        transform: rotate(-15deg)
-    }
-
-    70% {
-        transform: rotate(-20deg)
-    }
-
-    75% {
-        transform: rotate(-25deg)
-    }
-
-    80% {
-        transform: rotate(-30deg)
-    }
-
-    85% {
-        transform: rotate(-35deg)
-    }
-
-    90% {
-        transform: rotate(-40deg)
-    }
-
-    95% {
-        transform: rotate(-45deg)
-    }
-
-    100% {
-        transform: rotate(-50deg)
-    }
-
-}
-
-@import "contacto", "footer", "home"
+@import "contacto", "footer", "home", "nosotros", "servicios"

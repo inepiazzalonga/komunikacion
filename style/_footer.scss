@@ -21,9 +21,21 @@ footer{
         flex-direction: column;
         align-items: center;
         padding: 1em;
-        gap: 0.5em;
+        gap: 1em;
+        input{
+            width: 80%;
+            background-color: transparent;
+            outline: none;
+            border-style: none;
+            border-bottom: 1px $violeta solid;
+            color: rgb(255, 255, 255);
+            font-family: cocogoose;
+            text-align: center;
+            font-weight: lighter;
+        }
         button{
-            padding: 1em;
+            width: 60%;
+            padding: 0.5em;
             border-radius: 20px;
             border-style: none;
             background-color: #77206F;
@@ -31,8 +43,9 @@ footer{
         }
         h3{
             text-align: center;
-            font-family: sans-serif;
-            color: rgb(77, 10, 77);
+            font-family: asap;
+            color: $violeta;
+            font-size: 20px;
         }
     }
     .redes{

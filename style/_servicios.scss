@@ -1,0 +1,116 @@
+#servicios {
+    height: 650px;
+    background-image: url(../img/amarilloArriba.svg);
+    background-size: cover;
+    background-position: top;
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    gap: 2em;
+
+    h2 {
+        margin-top: 1em;
+        text-align: center;
+        color: #fff;
+        font-family: asap-semiB;
+        letter-spacing: 1.5px;
+    }
+
+    .cardServ {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "eCommerce tiendaNube redes publiRedes"
+        "eCommerce emailMkt redes diseño";
+        row-gap: 0.5em;
+        column-gap: 0.5em;
+        padding: 0%;
+
+        .eCommerce{
+            margin-top: 0.5em;
+            grid-area: eCommerce;
+            height: 30em;
+            width: 98%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 1em;
+            text-align: center;
+            border-radius: 30px;
+            border-style: none;
+            background-color: #fff;
+            box-shadow: 1px 2px 21px 4px rgba(66, 64, 64, 0.75);
+            -webkit-box-shadow: 1px 2px 21px 4px rgba(66, 64, 64, 0.75);
+            -moz-box-shadow: 1px 2px 21px 4px rgba(66, 64, 64, 0.75);
+
+
+            h3 {
+                font-family: asap-semiB;
+                font-size: 18px;
+                letter-spacing: 1px;
+                color: #fff;
+                width: 85%;
+                border-radius: 20px;
+                padding: 0.5em;
+                background: rgba(236, 31, 82, 0.775);
+                box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.5);
+                backdrop-filter: blur(4px);
+                -webkit-backdrop-filter: blur(4px);
+                border-radius: 10px;
+                border: 1px solid rgba(255, 255, 255, 0.18);
+            }
+
+            .back {
+                visibility: hidden;
+            }
+
+            &:hover {
+                transform: rotateY(180deg);
+                transition-duration: 2s;
+
+
+                .front {
+                    visibility: hidden;
+                }
+
+                .back {
+                    visibility: visible;
+                    transform: rotateY(180deg);
+                    justify-content: center;
+                }
+            }
+        }
+        .tiendaNube{
+            margin-top: 0%;
+            grid-area: tiendaNube;
+            height: 15em;
+            @extend .eCommerce;
+        }
+        .redes{
+            grid-area: redes;
+            @extend .eCommerce;
+        }
+        .publiRedes{
+            margin-top: 0%;
+            grid-area: publiRedes;
+            height: 15em;
+            @extend .eCommerce;
+        }
+        .emailMkt{
+            margin-top: 0%;
+            grid-area: emailMkt;
+            height: 15em;
+            @extend .eCommerce;
+        }
+        .diseño{
+            margin-top: 0%;
+            grid-area: diseño;
+            height: 15em;
+            @extend .eCommerce;
+        }
+    }
+
+
+}

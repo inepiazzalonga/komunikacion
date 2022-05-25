@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
 @font-face {
   font-family: asap-semiB;
@@ -38,7 +39,7 @@ body .navbar .navbar-nav {
 body .navbar .navbar-nav .nav-link {
   color: #66256C;
   text-transform: uppercase;
-  font-family: sans-serif;
+  font-family: asap;
 }
 
 body .navbar .navbar-nav .nav-link:hover {
@@ -48,387 +49,9 @@ body .navbar .navbar-nav .nav-link:hover {
   color: fuchsia;
 }
 
-body #nosotros {
-  height: 650px;
-  background-color: #edc519;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-body #nosotros h2 {
-  margin-top: 2em;
-  text-align: center;
-  color: #fff;
-  font-family: asap-semiB;
-}
-
-body #nosotros div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 2em;
-}
-
-body #nosotros div .infoNosotros {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 40%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-top: -2em;
-  color: #fff;
-}
-
-body #nosotros div .infoNosotros p {
-  text-align: justify;
-  padding: 1em;
-  font-family: "Poppins", sans-serif;
-}
-
-body #nosotros div .equipo {
-  margin-top: 2em;
-  width: 50%;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
-  -ms-grid-rows: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
-      grid-template-areas: "equipo1 . equipo2" ". equipo3 .";
-  row-gap: 1em;
-}
-
-body #nosotros div .equipo .equipo1, body #nosotros div .equipo .equipo2, body #nosotros div .equipo .equipo3 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 1em;
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: equipo1;
-  width: 12em;
-  height: 14em;
+#contacto {
+  height: 670px;
   background-color: #fff;
-  border-radius: 30px;
-}
-
-body #nosotros div .equipo .equipo1 img, body #nosotros div .equipo .equipo2 img, body #nosotros div .equipo .equipo3 img {
-  width: 80%;
-}
-
-body #nosotros div .equipo .equipo2 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 3;
-  grid-area: equipo2;
-}
-
-body #nosotros div .equipo .equipo3 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
-  grid-area: equipo3;
-}
-
-body #servicios {
-  height: 650px;
-  background-image: url(../img/amarilloArriba.svg);
-  background-size: cover;
-  background-position: top;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 2em;
-  gap: 4em;
-}
-
-body #servicios h2 {
-  margin-top: 1em;
-  text-align: center;
-  color: #fff;
-}
-
-body #servicios .cardServ {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-body #servicios .cardServ .card {
-  width: 25%;
-  height: 25em;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 2em;
-  text-align: center;
-  border-radius: 30px;
-  border-style: none;
-}
-
-body #servicios .cardServ .card:hover {
-  -webkit-transform: perspective(600px) rotateY(180deg);
-          transform: perspective(600px) rotateY(180deg);
-}
-
-body #servicios .cardServ .card:hover .front {
-  visibility: hidden;
-}
-
-body #servicios .cardServ .card:hover .back {
-  visibility: visible;
-  background-color: #fff;
-  padding: 4em 2em 3em 2em;
-}
-
-body #servicios .cardServ .card .front {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-body #servicios .cardServ .card .back {
-  visibility: hidden;
-  -webkit-transform: perspective(600px) rotateY(180deg);
-          transform: perspective(600px) rotateY(180deg);
-}
-
-@-webkit-keyframes rotar {
-  0% {
-    border-color: yellow;
-    -webkit-transform: rotate(-50deg);
-            transform: rotate(-50deg);
-  }
-  5% {
-    -webkit-transform: rotate(-45deg);
-            transform: rotate(-45deg);
-  }
-  10% {
-    -webkit-transform: rotate(-40deg);
-            transform: rotate(-40deg);
-  }
-  15% {
-    -webkit-transform: rotate(-35deg);
-            transform: rotate(-35deg);
-  }
-  20% {
-    -webkit-transform: rotate(-30deg);
-            transform: rotate(-30deg);
-  }
-  25% {
-    -webkit-transform: rotate(-25deg);
-            transform: rotate(-25deg);
-  }
-  30% {
-    -webkit-transform: rotate(-20deg);
-            transform: rotate(-20deg);
-  }
-  35% {
-    -webkit-transform: rotate(-15deg);
-            transform: rotate(-15deg);
-  }
-  40% {
-    -webkit-transform: rotate(-10deg);
-            transform: rotate(-10deg);
-  }
-  45% {
-    -webkit-transform: rotate(-5deg);
-            transform: rotate(-5deg);
-  }
-  50% {
-    border-color: yellowgreen;
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  55% {
-    -webkit-transform: rotate(-5deg);
-            transform: rotate(-5deg);
-  }
-  60% {
-    -webkit-transform: rotate(-10deg);
-            transform: rotate(-10deg);
-  }
-  65% {
-    -webkit-transform: rotate(-15deg);
-            transform: rotate(-15deg);
-  }
-  70% {
-    -webkit-transform: rotate(-20deg);
-            transform: rotate(-20deg);
-  }
-  75% {
-    -webkit-transform: rotate(-25deg);
-            transform: rotate(-25deg);
-  }
-  80% {
-    -webkit-transform: rotate(-30deg);
-            transform: rotate(-30deg);
-  }
-  85% {
-    -webkit-transform: rotate(-35deg);
-            transform: rotate(-35deg);
-  }
-  90% {
-    -webkit-transform: rotate(-40deg);
-            transform: rotate(-40deg);
-  }
-  95% {
-    -webkit-transform: rotate(-45deg);
-            transform: rotate(-45deg);
-  }
-  100% {
-    -webkit-transform: rotate(-50deg);
-            transform: rotate(-50deg);
-  }
-}
-
-@keyframes rotar {
-  0% {
-    border-color: yellow;
-    -webkit-transform: rotate(-50deg);
-            transform: rotate(-50deg);
-  }
-  5% {
-    -webkit-transform: rotate(-45deg);
-            transform: rotate(-45deg);
-  }
-  10% {
-    -webkit-transform: rotate(-40deg);
-            transform: rotate(-40deg);
-  }
-  15% {
-    -webkit-transform: rotate(-35deg);
-            transform: rotate(-35deg);
-  }
-  20% {
-    -webkit-transform: rotate(-30deg);
-            transform: rotate(-30deg);
-  }
-  25% {
-    -webkit-transform: rotate(-25deg);
-            transform: rotate(-25deg);
-  }
-  30% {
-    -webkit-transform: rotate(-20deg);
-            transform: rotate(-20deg);
-  }
-  35% {
-    -webkit-transform: rotate(-15deg);
-            transform: rotate(-15deg);
-  }
-  40% {
-    -webkit-transform: rotate(-10deg);
-            transform: rotate(-10deg);
-  }
-  45% {
-    -webkit-transform: rotate(-5deg);
-            transform: rotate(-5deg);
-  }
-  50% {
-    border-color: yellowgreen;
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  55% {
-    -webkit-transform: rotate(-5deg);
-            transform: rotate(-5deg);
-  }
-  60% {
-    -webkit-transform: rotate(-10deg);
-            transform: rotate(-10deg);
-  }
-  65% {
-    -webkit-transform: rotate(-15deg);
-            transform: rotate(-15deg);
-  }
-  70% {
-    -webkit-transform: rotate(-20deg);
-            transform: rotate(-20deg);
-  }
-  75% {
-    -webkit-transform: rotate(-25deg);
-            transform: rotate(-25deg);
-  }
-  80% {
-    -webkit-transform: rotate(-30deg);
-            transform: rotate(-30deg);
-  }
-  85% {
-    -webkit-transform: rotate(-35deg);
-            transform: rotate(-35deg);
-  }
-  90% {
-    -webkit-transform: rotate(-40deg);
-            transform: rotate(-40deg);
-  }
-  95% {
-    -webkit-transform: rotate(-45deg);
-            transform: rotate(-45deg);
-  }
-  100% {
-    -webkit-transform: rotate(-50deg);
-            transform: rotate(-50deg);
-  }
-}
-
-body {
-  background-color: #77206F;
-  padding: 0%;
-}
-
-body #contacto {
-  height: 650px;
-  background-color: #77206F;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -448,7 +71,37 @@ body #contacto {
   color: #fff;
 }
 
-body #contacto .form {
+#contacto .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2em;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #66256C;
+  border-radius: 20px;
+  width: 85%;
+  padding: 3em;
+}
+
+#contacto .form img {
+  width: 7em;
+  height: auto;
+}
+
+#contacto .form .rocket {
+  width: 10em;
+}
+
+#contacto .form form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -459,22 +112,52 @@ body #contacto .form {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: aliceblue;
-  border-radius: 20px;
-  width: 50%;
-  padding: 3em;
-}
-
-body #contacto .form form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   gap: 1em;
   border-radius: 20px;
+  width: 60%;
+}
+
+#contacto .form form input {
+  width: 100%;
+  background-color: transparent;
+  outline: none;
+  border-style: none;
+  border-bottom: 1px #edc519 solid;
+  color: white;
+  font-family: cocogoose;
+  text-align: center;
+  font-weight: lighter;
+}
+
+#contacto .form form select {
+  width: 100%;
+  color: #938f8f;
+  font-family: cocogoose;
+  text-align: center;
+  font-weight: lighter;
+}
+
+#contacto .form form textarea {
+  width: 100%;
+  color: #fff;
+  font-family: cocogoose;
+  text-align: center;
+  font-weight: lighter;
+}
+
+#contacto .form form button {
+  background-color: #ec1f53;
+  border-radius: 20px;
+  width: 80%;
+  border-style: none;
+  color: #fff;
+  padding: 0.3em;
+  font-family: cocogoose;
+}
+
+#contacto .form form button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 footer {
@@ -524,11 +207,24 @@ footer .subscribe {
       -ms-flex-align: center;
           align-items: center;
   padding: 1em;
-  gap: 0.5em;
+  gap: 1em;
+}
+
+footer .subscribe input {
+  width: 80%;
+  background-color: transparent;
+  outline: none;
+  border-style: none;
+  border-bottom: 1px #66256C solid;
+  color: white;
+  font-family: cocogoose;
+  text-align: center;
+  font-weight: lighter;
 }
 
 footer .subscribe button {
-  padding: 1em;
+  width: 60%;
+  padding: 0.5em;
   border-radius: 20px;
   border-style: none;
   background-color: #77206F;
@@ -537,8 +233,9 @@ footer .subscribe button {
 
 footer .subscribe h3 {
   text-align: center;
-  font-family: sans-serif;
-  color: #4d0a4d;
+  font-family: asap;
+  color: #66256C;
+  font-size: 20px;
 }
 
 footer .redes {
@@ -603,8 +300,9 @@ footer .redes img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 2em;
-  gap: 1em;
+  margin-top: 6em;
+  margin-left: 2em;
+  gap: 8em;
 }
 
 #home .intro .logoHome h2 {
@@ -616,5 +314,292 @@ footer .redes img {
 #home .intro .gifHome {
   position: relative;
   left: 15%;
+}
+
+#home .intro .gifHome img {
+  border-radius: 50px;
+}
+
+#nosotros {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  background-color: #edc519;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#nosotros h2 {
+  margin-top: 2em;
+  text-align: center;
+  color: #fff;
+  font-family: asap-semiB;
+  letter-spacing: 1px;
+}
+
+#nosotros div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2em;
+}
+
+#nosotros div .infoNosotros {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 40%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: -2em;
+  color: #fff;
+}
+
+#nosotros div .infoNosotros h3 {
+  font-family: asap-semiB;
+  letter-spacing: 1px;
+}
+
+#nosotros div .infoNosotros p {
+  text-align: justify;
+  padding: 1em;
+  font-family: "Poppins", sans-serif;
+}
+
+#nosotros div .infoNosotros .carousel {
+  width: 90%;
+}
+
+#nosotros div .infoNosotros .carousel .carousel-inner {
+  width: 90%;
+}
+
+#nosotros div .infoNosotros .carousel .carousel-inner .carousel-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  gap: 2em;
+}
+
+#nosotros div .equipo {
+  margin-top: 2em;
+  width: 50%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas: "equipo1 . equipo2" ". equipo3 .";
+  row-gap: 1em;
+}
+
+#nosotros div .equipo .equipo1, #nosotros div .equipo .equipo2, #nosotros div .equipo .equipo3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1em;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: equipo1;
+  width: 12em;
+  height: 14em;
+  background-color: #fff;
+  border-radius: 30px;
+}
+
+#nosotros div .equipo .equipo1 img, #nosotros div .equipo .equipo2 img, #nosotros div .equipo .equipo3 img {
+  width: 80%;
+}
+
+#nosotros div .equipo .equipo2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: equipo2;
+}
+
+#nosotros div .equipo .equipo3 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: equipo3;
+}
+
+#servicios {
+  height: 650px;
+  background-image: url(../img/amarilloArriba.svg);
+  background-size: cover;
+  background-position: top;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 2em;
+  gap: 2em;
+}
+
+#servicios h2 {
+  margin-top: 1em;
+  text-align: center;
+  color: #fff;
+  font-family: asap-semiB;
+  letter-spacing: 1.5px;
+}
+
+#servicios .cardServ {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas: "eCommerce tiendaNube redes publiRedes" "eCommerce emailMkt redes diseño";
+  row-gap: 0.5em;
+  -webkit-column-gap: 0.5em;
+          column-gap: 0.5em;
+  padding: 0%;
+}
+
+#servicios .cardServ .eCommerce, #servicios .cardServ .tiendaNube, #servicios .cardServ .redes, #servicios .cardServ .publiRedes, #servicios .cardServ .emailMkt, #servicios .cardServ .diseño {
+  margin-top: 0.5em;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: eCommerce;
+  height: 30em;
+  width: 98%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1em;
+  text-align: center;
+  border-radius: 30px;
+  border-style: none;
+  background-color: #fff;
+  box-shadow: 1px 2px 21px 4px rgba(66, 64, 64, 0.75);
+  -webkit-box-shadow: 1px 2px 21px 4px rgba(66, 64, 64, 0.75);
+  -moz-box-shadow: 1px 2px 21px 4px rgba(66, 64, 64, 0.75);
+}
+
+#servicios .cardServ .eCommerce h3, #servicios .cardServ .tiendaNube h3, #servicios .cardServ .redes h3, #servicios .cardServ .publiRedes h3, #servicios .cardServ .emailMkt h3, #servicios .cardServ .diseño h3 {
+  font-family: asap-semiB;
+  font-size: 18px;
+  letter-spacing: 1px;
+  color: #fff;
+  width: 85%;
+  border-radius: 20px;
+  padding: 0.5em;
+  background: rgba(236, 31, 82, 0.775);
+  -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.5);
+          box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.5);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+#servicios .cardServ .eCommerce .back, #servicios .cardServ .tiendaNube .back, #servicios .cardServ .redes .back, #servicios .cardServ .publiRedes .back, #servicios .cardServ .emailMkt .back, #servicios .cardServ .diseño .back {
+  visibility: hidden;
+}
+
+#servicios .cardServ .eCommerce:hover, #servicios .cardServ .tiendaNube:hover, #servicios .cardServ .redes:hover, #servicios .cardServ .publiRedes:hover, #servicios .cardServ .emailMkt:hover, #servicios .cardServ .diseño:hover {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transition-duration: 2s;
+          transition-duration: 2s;
+}
+
+#servicios .cardServ .eCommerce:hover .front, #servicios .cardServ .tiendaNube:hover .front, #servicios .cardServ .redes:hover .front, #servicios .cardServ .publiRedes:hover .front, #servicios .cardServ .emailMkt:hover .front, #servicios .cardServ .diseño:hover .front {
+  visibility: hidden;
+}
+
+#servicios .cardServ .eCommerce:hover .back, #servicios .cardServ .tiendaNube:hover .back, #servicios .cardServ .redes:hover .back, #servicios .cardServ .publiRedes:hover .back, #servicios .cardServ .emailMkt:hover .back, #servicios .cardServ .diseño:hover .back {
+  visibility: visible;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#servicios .cardServ .tiendaNube {
+  margin-top: 0%;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: tiendaNube;
+  height: 15em;
+}
+
+#servicios .cardServ .redes {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 3;
+  grid-area: redes;
+}
+
+#servicios .cardServ .publiRedes {
+  margin-top: 0%;
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+  grid-area: publiRedes;
+  height: 15em;
+}
+
+#servicios .cardServ .emailMkt {
+  margin-top: 0%;
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: emailMkt;
+  height: 15em;
+}
+
+#servicios .cardServ .diseño {
+  margin-top: 0%;
+  -ms-grid-row: 2;
+  -ms-grid-column: 4;
+  grid-area: diseño;
+  height: 15em;
 }
 /*# sourceMappingURL=style.css.map */
