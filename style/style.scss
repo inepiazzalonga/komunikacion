@@ -233,6 +233,7 @@ header {
       flex-wrap: wrap;
       align-content: center;
       justify-content: center;
+    
 
       &:hover .serviceCard {
          transform: rotateY(180deg);
@@ -245,6 +246,12 @@ header {
          height: 100%;
          transition: transform 1s;
          transform-style: preserve-3d;
+         .verMas{
+            background-color: transparent;
+            margin-top: 2em;
+            color: $fucsia;
+            font-family: cocogoose;
+         }
       }
 
       .serviceCard__front,
@@ -252,6 +259,10 @@ header {
          background-color: #FFF;
          position: absolute;
          backface-visibility: hidden;
+         .tiendaNube{
+            width: 10em;
+            height: auto;
+         }
       }
 
       .serviceCard__back {
@@ -260,6 +271,8 @@ header {
          h2 {
             font-family: cocogoose;
             color: $violeta;
+            font-size: 20px;
+            margin-top: 2em;
          }
       }
 
@@ -297,6 +310,13 @@ header {
             height: 100%;
             transition: transform 1s;
             transform-style: preserve-3d;
+            .verMas{
+               background-color: transparent;
+               margin-top: 0.5em;
+               color: $fucsia;
+               font-family: cocogoose;
+               margin-bottom: 0.5em;
+            }
          }
 
          .serviceCard__front,
@@ -314,6 +334,7 @@ header {
             h2 {
                font-family: cocogoose;
                color: $violeta;
+               font-size: 20px;
             }
          }
 
